@@ -1,17 +1,33 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Fancify Shamcify</title>
-
-		<!-- link to your script file here -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fancify My Text</title>
+    <script src="fancifymytext.js"></script>
+	
+</head>
+<body>
+    <h1>Fancify My Text</h1>
+    <fieldset>
+        <legend>Text</legend>
+        <textarea id="mainText" rows="4" cols="30"></textarea>
+    </fieldset>
+    <fieldset>
+        <legend>Fancify</legend>
 		
-	</head>
+        <!-- Bigger Button -->
+        <button onclick="makeBigger()">Bigger!</button>
+        
+        <!-- Radio Button -->
+        <input type="radio" id="fancy" name="style" onchange="applyStyles()">
+        <label for="fancy">FancyShmancy</label>
+        
+        <input type="radio" id="boring" name="style" onchange="applyStyles()" checked>
+        <label for="boring">BoringBetty</label>
 
-	<body>
-		<h1>Fancify my Text</h1>
-		
+        <!-- Moo Button -->
+        <button onclick="mooify()">Moo</button>
+    </fieldset>
 
-		<!-- Your UI controls go here -->
-		
-	</body>
+</body>
 </html>
